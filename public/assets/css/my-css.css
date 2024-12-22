@@ -1,0 +1,107 @@
+
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 99;
+    display: none;
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Round shape */
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.tab-pane .list-group.list-group-flush .open-chat{
+    cursor: pointer;
+    
+}
+
+.tab-pane .list-group.list-group-flush .list-group-item:hover{
+    background-color: rgb(216, 215, 215);
+}
+
+/* General chat container */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex-direction: column-reverse;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow-y: auto;
+    direction: ltr;
+    scrollbar-width: thin; /* عرض شريط التمرير */
+    -ms-overflow-style: none; /* إخفاء شريط التمرير في متصفح إنترنت إكسبلورر */
+    /* flex: 1;
+    justify-content: flex-end; */
+}
+
+/* Message bubble styling */
+.message-bubble {
+    max-width: 75%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+/* Sender's bubble (right) */
+.message-bubble.sender {
+    align-self: flex-end;
+    background-color: #0b71ff;
+    border-radius: 10px 10px 0 10px;
+    color: white;
+}
+
+/* Receiver's bubble (left) */
+.message-bubble.receiver {
+    align-self: flex-start;
+    background-color: #fbfbfb;
+    border-radius: 10px 10px 10px 0;
+    border: 1px solid #e1e1e1;
+}
+
+/* Message content */
+.message-content {
+    margin-bottom: 5px;
+    line-height: 1.4;
+}
+
+/* Message time */
+.message-time {
+    font-size: 12px;
+    color: #bbbaba;
+    align-self: flex-end;
+}
+
+/* Optional styling for responsiveness */
+@media (max-width: 768px) {
+    .chat-container {
+        max-width: 100%;
+        padding: 5px;
+    }
+
+    .message-bubble {
+        max-width: 90%;
+    }
+}
+
+.card-footer {
+    /* flex-shrink: 0; */
+}
